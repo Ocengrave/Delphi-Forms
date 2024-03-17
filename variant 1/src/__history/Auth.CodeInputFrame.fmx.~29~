@@ -1,0 +1,267 @@
+object Code: TCode
+  Size.Width = 488.000000000000000000
+  Size.Height = 411.000000000000000000
+  Size.PlatformDefault = False
+  OnResize = FrameResize
+  object RectangleBG: TRectangle
+    Align = Contents
+    Fill.Color = xBF9798A6
+    Locked = True
+    Size.Width = 488.000000000000000000
+    Size.Height = 411.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object LayoutClient: TLayout
+    Align = Center
+    Padding.Left = 20.000000000000000000
+    Padding.Right = 20.000000000000000000
+    Padding.Bottom = 20.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 290.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object RectangleFrame: TRectangle
+      Align = Contents
+      Fill.Color = xFF202123
+      Locked = True
+      Size.Width = 320.000000000000000000
+      Size.Height = 290.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 6.000000000000000000
+      YRadius = 6.000000000000000000
+    end
+    object VertScrollBoxContent: TVertScrollBox
+      Align = Client
+      Padding.Right = 10.000000000000000000
+      Padding.Bottom = 10.000000000000000000
+      Size.Width = 280.000000000000000000
+      Size.Height = 236.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Viewport.Width = 280.000000000000000000
+      Viewport.Height = 236.000000000000000000
+      object Label1: TLabel
+        Align = Top
+        AutoSize = True
+        StyledSettings = []
+        Margins.Top = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 270.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'SF Pro Text'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFFE9E9E9
+        TextSettings.HorzAlign = Center
+        TextSettings.WordWrap = False
+        TextSettings.Trimming = None
+        Text = 'Verify Code'
+        TabOrder = 2
+      end
+      object Label2: TLabel
+        Align = Top
+        AutoSize = True
+        StyledSettings = [Style]
+        Margins.Top = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.Y = 54.000000000000000000
+        Size.Width = 270.000000000000000000
+        Size.Height = 51.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'SF Pro Text'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = xB4FFFFFF
+        TextSettings.HorzAlign = Center
+        TextSettings.Trimming = None
+        Text = 
+          'A message with a confirmation code has been sent to your email a' +
+          'ddress. Enter the code and click "Confirm"'
+        TabOrder = 1
+        TabStop = False
+      end
+      object RectangleConfirm: TRectangle
+        Align = Top
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 15.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 125.000000000000000000
+        Size.Width = 260.000000000000000000
+        Size.Height = 38.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claNull
+        Stroke.Thickness = 0.750000000000000000
+        object edit_code: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          StyleLookup = 'signup_edit'
+          TabOrder = 0
+          TextSettings.Font.Family = 'SF Pro Text'
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 215.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'CODE'
+          CharCase = ecUpperCase
+          OnTyping = edit_codeTyping
+        end
+        object img_mail: TImage
+          MultiResBitmap.Height = 48
+          MultiResBitmap.Width = 48
+          MultiResBitmap = <
+            item
+              Width = 64
+              Height = 64
+              PNG = {
+                89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+                DE0000000473424954080808087C0864880000039549444154789CED9B4D4855
+                4114C77F9A160812B42825D0C88A96411414442A91EDA245F4414521216DDA44
+                D4222AA95DB46867525160B40BDDF5015918058510842586A14644518B848444
+                7D2D66A6375EEF7DF7FADE9D732FDCF787C39B77983BFF33E7CD99997BDE0CF8
+                A30DE80186813920E7587E03CF802BC0F2009B44500374E3BEC38564026875DD
+                51830ACFF76EE0A42ECF02035AE61CDBB10AD80BD4EBEF53C026E09363DE7968
+                23FF2BBC03564A92039528E71B1B5E09F3D3A3892781F5D2E416BAC83B619D24
+                F1303231BE1839E8B4C7A86167B0C1355911706E5395553613E20BE0B96BE210
+                5CD29F95056BC50C33EC2E4B920640CC16510FA7116507246D40D2C8BC03AAC2
+                ABC4865DC001A089E88E3F0E34C7C43F09BC056EE8F202B89C79CF23B7790A93
+                31D4BB0720330236025775791A7803CC08F07AD100AC051A81EBC0116F055723
+                A0C36A7B7BCC6D2F0615C0636DC737A3949804EBADB2F81B9E851CF05A97EB8C
+                32F3AB40E61D20B90C0661292A4CC63DBAAD146FDF04F0394AC53438A01FD806
+                EC019E58BA5226CC9CA7BD40944320690380161686400B190A8169E677DEE85E
+                4A90673E04CA0E48DA80A4918639E010EA55F91CF0D3D2B553BC7DE3C019ABBD
+                40A4C101D780D5A87DFA2D8FAE140C58ED05220D0E388B1A01BD1E5DA923A037
+                B456090471E28196309D13647E122C3B4080E3AF55AE15E02B04C33F6D141273
+                C09055BE09DC66614EF00BE17BF71A6033B0A4483B1A80633E36FD87AB9CE032
+                E03D8533B573C0EE026DB4A2F2787165860FFB91B84C8BAF41ADCB858CF2E3AD
+                D4FAD99067A3CA1470DA26905A06C7801DA8CD8DF78F91FE8067EA80FBE40F4C
+                FD41ED0F3E1669C3246AE8DB7392F83EE0AB9630B4A23A6FB2B743C07E8AEF7C
+                20D2B60C9A21FF947CE7EFA29223B1771ED2B11334A84375DC3E23D8059C7249
+                9A260774F8E8BEBB264D5B0800DC93244B83037EE9CF29E004EA2F7131A42104
+                DA514BE41DE08334791A1CD0A72511A421041245D901491B903432EF00BF49B0
+                99741C9715819F03766AC904321F027E0EE8449DA84A52C490F91150CA4EB01A
+                75A56590FC16B61A7500B1D15377067848025BDDC5C05C90EC8C58FFA8AE3FEA
+                A3F393516F0301A8B09EB918F199A26187C088FE6C8AF8EC202A95DDE7D14DF8
+                D49D25FA7EDFE61F09ACE500E6DADC77608524B10717C88F00D16B73F6C5C947
+                24E3847DA8AC6D0EA163B585AECEFE40E5E846B5412E510B6C41E50520A1ABB3
+                90C1CBD341C8CCF5F97F1F8EA272DD262F6B0000000049454E44AE426082}
+              FileName = 'C:\Users\Oceangrave\Desktop\github\Auth\resources\image\mail.png'
+            end>
+          Align = Right
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 224.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 31.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object Button_confirm: TButton
+        Align = Top
+        Enabled = False
+        StyledSettings = [Family]
+        Margins.Left = 25.000000000000000000
+        Margins.Top = 15.000000000000000000
+        Margins.Right = 25.000000000000000000
+        Margins.Bottom = 8.000000000000000000
+        Position.X = 25.000000000000000000
+        Position.Y = 183.000000000000000000
+        Size.Width = 220.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'login_button'
+        TabOrder = 0
+        Text = 'CONFIRM'
+        TextSettings.Font.Family = 'SF Pro Text'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = claWhite
+        TextSettings.FontColorForState.Normal = claWhite
+        TextSettings.FontColorForState.Hot = claWhite
+        TextSettings.FontColorForState.Pressed = claWhite
+        TextSettings.FontColorForState.Focused = claWhite
+        TextSettings.Trimming = None
+      end
+    end
+    object LayoutExit: TLayout
+      Align = Top
+      Margins.Top = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 280.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object Button_Facebook: TButton
+        Align = Right
+        Images = ImageList
+        ImageIndex = 0
+        Position.X = 248.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'socButton'
+        TabOrder = 0
+        TextSettings.Trimming = None
+        OnClick = Button_FacebookClick
+      end
+    end
+  end
+  object ImageList: TImageList
+    Source = <
+      item
+        MultiResBitmap.Height = 78
+        MultiResBitmap.Width = 78
+        MultiResBitmap.LoadSize = 0
+        MultiResBitmap = <
+          item
+            Width = 78
+            Height = 78
+            PNG = {
+              89504E470D0A1A0A0000000D494844520000004E0000004E08060000008EAA20
+              1D0000000473424954080808087C086488000001C649444154789CEDDA3152C2
+              4018C5F1B7366A0B3710CFA2145A50D9EA15B473BC8B9674B45E460B0E40A503
+              8EC5B3607760302424ECB79364DFAFA4C8C7FE27C96476161011111111111111
+              11111111399EB3B828C921800700A700A6CEB90F8B3925F32F01DC0158017875
+              CE2D52CE6F84E490E49C1B5F24C709E78F497E6FCD9F931CA49ADF18C927FEB7
+              4C11CF475B16CC7F8C3DEB24F605019C17FC7606606619CF5F7BE66715CD6F37
+              9223FF781631B9F34AEEB4F0AAB8883DD304C9AB9285FC90BC8D38EBBA62D64D
+              AC5949A488D7BB688165BCDE460B2CE2F53E5A10335E36D18218F1B28B161C13
+              2FDB68419378D9470BEAC453B41D87C453B43D2AE2FDFA388A56A4229EA295A9
+              114FD176F978FB1E4D72FDE8B6269AC57E9C2593ADFECEAAF9A846DB92EAB41A
+              D1142FA88856F5399267BC8A68E10338D94E7227D409A2785E9310D9C73B2640
+              B6F1622C3CBB7831179C4D3C8B85F63E9EE5027B1B2FC5C27A172FE5827A138F
+              3A74D30CC99794D1B6E696C57B8E3DCF623F6E59F0DB0AC0C439F76E300F00E0
+              AF3DF1B30EF94FEDC2761C65DD7E55981C65B53A3C3D00708FF549C8A973EED3
+              624EC9FC113687A7DF3A71785A4444444444444444444444B2F407118443D2E3
+              DEB8120000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Oceangrave\Desktop\github\variant 1\resources\image\whi' +
+              'te_cross.png'
+          end>
+        Name = 'white_cross'
+      end>
+    Destination = <
+      item
+        Layers = <
+          item
+            Name = 'white_cross'
+            SourceRect.Right = 78.000000000000000000
+            SourceRect.Bottom = 78.000000000000000000
+          end>
+      end>
+    Left = 32
+    Top = 336
+  end
+end

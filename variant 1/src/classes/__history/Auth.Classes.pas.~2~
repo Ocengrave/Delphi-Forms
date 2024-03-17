@@ -1,0 +1,10 @@
+unit Auth.Classes;
+
+interface
+
+type
+ TMode = (ssFull, ssCompact);
+
+implementation
+
+end.

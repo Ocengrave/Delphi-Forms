@@ -1,0 +1,10 @@
+unit Auth.Classes;
+
+interface
+
+type
+ TFormSize = (ssFull, ssCompact);
+
+implementation
+
+end.

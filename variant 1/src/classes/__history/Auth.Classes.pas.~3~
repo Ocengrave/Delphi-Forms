@@ -1,0 +1,10 @@
+unit Auth.Classes;
+
+interface
+
+type
+ TWindowMode = (ssFull, ssCompact);
+
+implementation
+
+end.

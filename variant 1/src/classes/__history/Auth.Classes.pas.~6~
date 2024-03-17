@@ -1,0 +1,13 @@
+unit Auth.Classes;
+
+interface
+
+uses
+  System.SysUtils;
+
+type
+  TScreenMode = (Maximal, Medium, Minimal);
+
+implementation
+
+end.

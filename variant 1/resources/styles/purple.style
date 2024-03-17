@@ -1,0 +1,531 @@
+object TStyleContainer
+  object TLayout
+    StyleName = 'socButton'
+    Align = Center
+    Size.Width = 787.000000000000000000
+    Size.Height = 844.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 4
+    object TGlyph
+      StyleName = 'glyphstyle'
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Align = Client
+      Size.Width = 16.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TButtonStyleTextObject
+      StyleName = 'text'
+      Align = Center
+      Locked = True
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 293.000000000000000000
+      Size.Height = 31.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Text'
+      TextSettings.Font.Family = 'SF Pro Text'
+      TextSettings.Font.StyleExt = {00050000000000000004000000}
+      TextSettings.FontColor = claWhite
+      ShadowVisible = False
+      HotColor = claWhite
+      FocusedColor = claWhite
+      NormalColor = claWhite
+      PressedColor = claWhite
+    end
+  end
+  object TLayout
+    StyleName = 'signup_edit'
+    Align = Center
+    Size.Width = 231.000000000000000000
+    Size.Height = 31.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 7
+    object TLayout
+      StyleName = 'content'
+      Align = Client
+      Locked = True
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 223.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TLayout
+      StyleName = 'buttons'
+      Align = Right
+      Locked = True
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 229.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 0.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x7F0078D7
+    end
+    object TFontObject
+      StyleName = 'font'
+      Font.Family = 'SF Pro Text'
+    end
+    object TLabel
+      StyleName = 'prompt'
+      StyledSettings = [Size, Style, FontColor]
+      Locked = True
+      Opacity = 0.500000000000000000
+      StyleLookup = 'Edit2Style1LabelStyle1'
+      TextSettings.Font.Family = 'SF Pro Text'
+      TextSettings.Trimming = None
+      Visible = False
+    end
+  end
+  object TLayout
+    StyleName = 'login_button'
+    Align = Center
+    Size.Width = 295.000000000000000000
+    Size.Height = 35.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object TGlyph
+      StyleName = 'glyphstyle'
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Align = Left
+      Size.Width = 16.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TRectangle
+      StyleName = 'background'
+      Align = Client
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF647DEE
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF7F53AC
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 1.000000000000000000
+      Fill.Gradient.StartPosition.Y = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.500000059604644800
+      HitTest = False
+      Size.Width = 295.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object TButtonStyleTextObject
+        StyleName = 'text'
+        Align = Center
+        Locked = True
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Size.Width = 293.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Text'
+        TextSettings.Font.Family = 'SF Pro Text'
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+        TextSettings.FontColor = claWhite
+        ShadowVisible = False
+        HotColor = claWhite
+        FocusedColor = claWhite
+        NormalColor = claWhite
+        PressedColor = claWhite
+      end
+      object TColorAnimation
+        StyleName = 'ColorAnimation1Style'
+        Duration = 0.300000011920929000
+        Inverse = True
+        PropertyName = 'Fill.Color'
+        StartValue = xFF647DEE
+        StopValue = xFF1F48FD
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
+    end
+    object TShadowEffect
+      StyleName = 'ShadowEffect1'
+      Distance = 1.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.200000002980232200
+      Opacity = 0.500000000000000000
+      ShadowColor = claBlack
+    end
+  end
+  object TLayout
+    StyleName = 'signup_edit_err'
+    Align = Center
+    Size.Width = 231.000000000000000000
+    Size.Height = 31.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 12
+    object TLayout
+      StyleName = 'content'
+      Align = Client
+      Locked = True
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 223.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TLayout
+      StyleName = 'buttons'
+      Align = Right
+      Locked = True
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 229.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 0.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x7F0078D7
+    end
+    object TFontObject
+      StyleName = 'font'
+      Font.Family = 'SF Pro Text'
+    end
+    object TLabel
+      StyleName = 'prompt'
+      StyledSettings = [Size, Style]
+      Locked = True
+      Opacity = 0.500000000000000000
+      StyleLookup = 'Edit2Style1LabelStyle1'
+      TextSettings.Font.Family = 'SF Pro Text'
+      TextSettings.FontColor = claRed
+      TextSettings.Trimming = None
+      Visible = False
+    end
+  end
+  object TLayout
+    StyleName = 'hyperLink'
+    Align = Center
+    Size.Width = 787.000000000000000000
+    Size.Height = 844.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 3
+    object TGlyph
+      StyleName = 'glyphstyle'
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Align = Client
+      Size.Width = 783.000000000000000000
+      Size.Height = 840.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TButtonStyleTextObject
+      StyleName = 'text'
+      Align = Center
+      Locked = True
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 293.000000000000000000
+      Size.Height = 31.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'SF Pro Text'
+      TextSettings.Font.StyleExt = {00050000000000000004000000}
+      TextSettings.FontColor = claWhite
+      ShadowVisible = False
+      HotColor = claWhite
+      FocusedColor = xFF551A8B
+      NormalColor = claWhite
+      PressedColor = claWhite
+    end
+  end
+  object TLayout
+    StyleName = 'chb_auth'
+    Align = Center
+    Size.Width = 275.000000000000000000
+    Size.Height = 45.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 18
+    object TLayout
+      Align = Left
+      Size.Width = 18.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      object TCheckStyleObject
+        StyleName = 'background'
+        Align = Center
+        CapMode = Tile
+        Locked = True
+        SourceLookup = 'Windows 11 Desktopstyle.png'
+        Size.Width = 13.000000000000000000
+        Size.Height = 13.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Center
+        ActiveTrigger = Checked
+        ActiveLink = <
+          item
+            SourceRect.Left = 262.000000000000000000
+            SourceRect.Top = 474.000000000000000000
+            SourceRect.Right = 278.000000000000000000
+            SourceRect.Bottom = 490.000000000000000000
+          end
+          item
+            Scale = 1.500000000000000000
+            SourceRect.Left = 46.000000000000000000
+            SourceRect.Top = 219.000000000000000000
+            SourceRect.Right = 66.000000000000000000
+            SourceRect.Bottom = 239.000000000000000000
+          end
+          item
+            Scale = 2.000000000000000000
+            SourceRect.Left = 62.000000000000000000
+            SourceRect.Top = 292.000000000000000000
+            SourceRect.Right = 88.000000000000000000
+            SourceRect.Bottom = 318.000000000000000000
+          end>
+        SourceLink = <
+          item
+            SourceRect.Left = 3.000000000000000000
+            SourceRect.Top = 146.000000000000000000
+            SourceRect.Right = 16.000000000000000000
+            SourceRect.Bottom = 159.000000000000000000
+          end
+          item
+            Scale = 1.500000000000000000
+            SourceRect.Left = 4.000000000000000000
+            SourceRect.Top = 219.000000000000000000
+            SourceRect.Right = 24.000000000000000000
+            SourceRect.Bottom = 239.000000000000000000
+          end
+          item
+            Scale = 2.000000000000000000
+            SourceRect.Left = 6.000000000000000000
+            SourceRect.Top = 292.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 318.000000000000000000
+          end>
+        HotLink = <
+          item
+            SourceRect.Left = 17.000000000000000000
+            SourceRect.Top = 146.000000000000000000
+            SourceRect.Right = 30.000000000000000000
+            SourceRect.Bottom = 159.000000000000000000
+          end
+          item
+            Scale = 1.500000000000000000
+            SourceRect.Left = 25.000000000000000000
+            SourceRect.Top = 219.000000000000000000
+            SourceRect.Right = 45.000000000000000000
+            SourceRect.Bottom = 239.000000000000000000
+          end
+          item
+            Scale = 2.000000000000000000
+            SourceRect.Left = 34.000000000000000000
+            SourceRect.Top = 292.000000000000000000
+            SourceRect.Right = 60.000000000000000000
+            SourceRect.Bottom = 318.000000000000000000
+          end>
+        ActiveHotLink = <
+          item
+            SourceRect.Left = 262.000000000000000000
+            SourceRect.Top = 474.000000000000000000
+            SourceRect.Right = 278.000000000000000000
+            SourceRect.Bottom = 490.000000000000000000
+          end
+          item
+            Scale = 1.500000000000000000
+            SourceRect.Left = 67.000000000000000000
+            SourceRect.Top = 219.000000000000000000
+            SourceRect.Right = 87.000000000000000000
+            SourceRect.Bottom = 239.000000000000000000
+          end
+          item
+            Scale = 2.000000000000000000
+            SourceRect.Left = 90.000000000000000000
+            SourceRect.Top = 292.000000000000000000
+            SourceRect.Right = 116.000000000000000000
+            SourceRect.Bottom = 318.000000000000000000
+          end>
+        FocusedLink = <
+          item
+            SourceRect.Left = 17.000000000000000000
+            SourceRect.Top = 146.000000000000000000
+            SourceRect.Right = 30.000000000000000000
+            SourceRect.Bottom = 159.000000000000000000
+          end
+          item
+            Scale = 1.500000000000000000
+            SourceRect.Left = 25.000000000000000000
+            SourceRect.Top = 219.000000000000000000
+            SourceRect.Right = 45.000000000000000000
+            SourceRect.Bottom = 239.000000000000000000
+          end
+          item
+            Scale = 2.000000000000000000
+            SourceRect.Left = 34.000000000000000000
+            SourceRect.Top = 292.000000000000000000
+            SourceRect.Right = 60.000000000000000000
+            SourceRect.Bottom = 318.000000000000000000
+          end>
+        ActiveFocusedLink = <
+          item
+            SourceRect.Left = 262.000000000000000000
+            SourceRect.Top = 474.000000000000000000
+            SourceRect.Right = 278.000000000000000000
+            SourceRect.Bottom = 490.000000000000000000
+          end
+          item
+            Scale = 1.500000000000000000
+            SourceRect.Left = 67.000000000000000000
+            SourceRect.Top = 219.000000000000000000
+            SourceRect.Right = 87.000000000000000000
+            SourceRect.Bottom = 239.000000000000000000
+          end
+          item
+            Scale = 2.000000000000000000
+            SourceRect.Left = 90.000000000000000000
+            SourceRect.Top = 292.000000000000000000
+            SourceRect.Right = 116.000000000000000000
+            SourceRect.Bottom = 318.000000000000000000
+          end>
+        object TFillRGBEffect
+          StyleName = 'FillRGBEffect1Style'
+          Trigger = 'IsChecked=true'
+          Enabled = False
+          Color = xFF647DEE
+        end
+      end
+    end
+    object TButtonStyleTextObject
+      StyleName = 'text'
+      Align = Client
+      Locked = True
+      Margins.Left = 3.000000000000000000
+      Size.Width = 254.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      ShadowVisible = False
+      HotColor = claBlack
+      FocusedColor = claBlack
+      NormalColor = claBlack
+      PressedColor = claBlack
+    end
+  end
+  object TLayout
+    StyleName = 'checkboxstyle_custom'
+    Align = Center
+    Padding.Top = -1.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 6
+    object TLayout
+      Align = Left
+      Position.Y = -1.000000000000000000
+      Size.Width = 22.000000000000000000
+      Size.Height = 51.000000000000000000
+      Size.PlatformDefault = False
+      object TRectangle
+        Align = Center
+        HitTest = False
+        Size.Width = 16.000000000000000000
+        Size.Height = 16.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+        object TColorAnimation
+          StyleName = 'focused'
+          Duration = 0.000000000000000000
+          PropertyName = 'Fill.Color'
+          StartValue = claLightgray
+          StopValue = xFF647DEE
+          Trigger = 'IsChecked=true'
+          TriggerInverse = 'IsChecked=false'
+        end
+      end
+      object TImage
+        StyleName = 'check'
+        MultiResBitmap = <
+          item
+            Width = 12
+            Height = 12
+            PNG = {
+              89504E470D0A1A0A0000000D494844520000000C0000000C080600000056755C
+              E70000000473424954080808087C0864880000003F4944415428916360189AE0
+              FFFFFFFCFFFFFFEF2745F194FFFFFF0B90AFF8FFFFFF3DE882784D46921424DA
+              19488A1490351372B3C0FFFFFF2710E5419A010007345782F18C94D400000000
+              49454E44AE426082}
+            FileName = 
+              'C:\Users\Oceangrave\Desktop\github\Auth\resources\image\check.pn' +
+              'g'
+          end>
+        Align = Center
+        HitTest = False
+        MarginWrapMode = Fit
+        Opacity = 0.000000000000000000
+        Size.Width = 12.000000000000000000
+        Size.Height = 12.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Center
+        object TFloatAnimation
+          Duration = 0.000000000000000000
+          PropertyName = 'Opacity'
+          StartValue = 0.000000000000000000
+          StopValue = 1.000000000000000000
+          Trigger = 'IsChecked=True'
+          TriggerInverse = 'IsChecked=False'
+        end
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = Client
+      Locked = True
+      HitTest = False
+      Margins.Left = 5.000000000000000000
+      Size.Width = 23.000000000000000000
+      Size.Height = 51.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'SF Pro Text'
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF202020
+    end
+  end
+end

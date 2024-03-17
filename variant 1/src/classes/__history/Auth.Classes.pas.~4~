@@ -1,0 +1,10 @@
+unit Auth.Classes;
+
+interface
+
+type
+ TScreenMode = (ssFull, ssCompact);
+
+implementation
+
+end.

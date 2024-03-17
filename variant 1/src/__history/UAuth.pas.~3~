@@ -1,0 +1,27 @@
+unit UAuth;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts;
+
+type
+  TAuth = class(TForm)
+    WhiteStyle: TStyleBook;
+    BlackStyle: TStyleBook;
+    LayoutClient: TLayout;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Auth: TAuth;
+
+implementation
+
+{$R *.fmx}
+
+end.

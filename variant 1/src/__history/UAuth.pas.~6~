@@ -1,0 +1,44 @@
+unit UAuth;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts,
+  FMX.Objects, Auth.Classes;
+
+type
+  TAuth = class(TForm)
+    WhiteStyle: TStyleBook;
+    BlackStyle: TStyleBook;
+    LayoutClient: TLayout;
+    LeftPanel: TRectangle;
+  private
+    { Private declarations }
+    FScreenMode: TScreenMode;
+    procedure SetScreenMode(const Value: TScreenMode);
+    procedure UpdateScreenMode;
+  public
+    { Public declarations }
+    property ScreenMode: TScreenMode read FScreenMode write SetMode;
+  end;
+
+var
+  Auth: TAuth;
+
+implementation
+
+{$R *.fmx}
+
+{ TAuth }
+
+procedure TAuth.SetScreenMode(const Value: TWindowMode);
+begin
+  if ScreenMode = Value then
+    Exit;
+  ScreenMode := Value;
+  UpdateMode;
+
+end;
+
+end.

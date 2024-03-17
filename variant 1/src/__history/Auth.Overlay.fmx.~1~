@@ -1,0 +1,5 @@
+object Overlay: TOverlay
+  Size.Width = 524.000000000000000000
+  Size.Height = 364.000000000000000000
+  Size.PlatformDefault = False
+end

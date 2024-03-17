@@ -1,0 +1,361 @@
+object TStyleContainer
+  object TLayout
+    StyleName = 'socButton'
+    Align = Center
+    Size.Width = 787.000000000000000000
+    Size.Height = 844.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 4
+    object TGlyph
+      StyleName = 'glyphstyle'
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Align = Client
+      Size.Width = 16.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TButtonStyleTextObject
+      StyleName = 'text'
+      Align = Center
+      Locked = True
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 293.000000000000000000
+      Size.Height = 31.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Text'
+      TextSettings.Font.Family = 'SF Pro Text'
+      TextSettings.Font.StyleExt = {00050000000000000004000000}
+      TextSettings.FontColor = claWhite
+      ShadowVisible = False
+      HotColor = claWhite
+      FocusedColor = claWhite
+      NormalColor = claWhite
+      PressedColor = claWhite
+    end
+  end
+  object TLayout
+    StyleName = 'signup_edit'
+    Align = Center
+    Size.Width = 231.000000000000000000
+    Size.Height = 31.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 9
+    object TLayout
+      StyleName = 'content'
+      Align = Client
+      Locked = True
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 223.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TLayout
+      StyleName = 'buttons'
+      Align = Right
+      Locked = True
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 229.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 0.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x7F0078D7
+    end
+    object TFontObject
+      StyleName = 'font'
+      Font.Family = 'SF Pro Text'
+    end
+    object TLabel
+      StyleName = 'prompt'
+      StyledSettings = [Size, Style, FontColor]
+      Locked = True
+      Opacity = 0.500000000000000000
+      StyleLookup = 'Edit2Style1LabelStyle1'
+      TextSettings.Font.Family = 'SF Pro Text'
+      TextSettings.Trimming = None
+      Visible = False
+    end
+  end
+  object TLayout
+    StyleName = 'login_button'
+    Align = Center
+    Size.Width = 295.000000000000000000
+    Size.Height = 35.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 5
+    object TGlyph
+      StyleName = 'glyphstyle'
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Align = Left
+      Size.Width = 16.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TRectangle
+      StyleName = 'background'
+      Align = Client
+      Fill.Color = xFFFB5F5F
+      HitTest = False
+      Size.Width = 295.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object TButtonStyleTextObject
+        StyleName = 'text'
+        Align = Center
+        Locked = True
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Size.Width = 293.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'SF Pro Text'
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+        TextSettings.FontColor = claWhite
+        ShadowVisible = False
+        HotColor = claWhite
+        FocusedColor = claWhite
+        NormalColor = claWhite
+        PressedColor = claWhite
+      end
+      object TColorAnimation
+        StyleName = 'ColorAnimation1Style'
+        Duration = 0.300000011920929000
+        PropertyName = 'Fill.Color'
+        StartValue = xFFFB5F5F
+        StopValue = xFFF53C3C
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
+    end
+    object TShadowEffect
+      StyleName = 'ShadowEffect1'
+      Distance = 1.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.200000002980232200
+      Opacity = 0.500000000000000000
+      ShadowColor = claBlack
+    end
+  end
+  object TLayout
+    StyleName = 'signup_edit_err'
+    Align = Center
+    Size.Width = 231.000000000000000000
+    Size.Height = 31.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 11
+    object TLayout
+      StyleName = 'content'
+      Align = Client
+      Locked = True
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 223.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TLayout
+      StyleName = 'buttons'
+      Align = Right
+      Locked = True
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 229.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 0.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x7F0078D7
+    end
+    object TFontObject
+      StyleName = 'font'
+      Font.Family = 'SF Pro Text'
+    end
+    object TLabel
+      StyleName = 'prompt'
+      StyledSettings = [Size, Style]
+      Locked = True
+      Opacity = 0.500000000000000000
+      StyleLookup = 'Edit2Style1LabelStyle1'
+      TextSettings.Font.Family = 'SF Pro Text'
+      TextSettings.FontColor = claRed
+      TextSettings.Trimming = None
+      Visible = False
+    end
+  end
+  object TLayout
+    StyleName = 'hyperLink'
+    Align = Center
+    Size.Width = 787.000000000000000000
+    Size.Height = 844.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 3
+    object TGlyph
+      StyleName = 'glyphstyle'
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Align = Client
+      Size.Width = 783.000000000000000000
+      Size.Height = 840.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TButtonStyleTextObject
+      StyleName = 'text'
+      Align = Center
+      Locked = True
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 293.000000000000000000
+      Size.Height = 31.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'SF Pro Text'
+      TextSettings.Font.StyleExt = {00050000000000000004000000}
+      TextSettings.FontColor = claWhite
+      ShadowVisible = False
+      HotColor = claWhite
+      FocusedColor = xFF551A8B
+      NormalColor = claWhite
+      PressedColor = claWhite
+    end
+  end
+  object TLayout
+    StyleName = 'checkboxstyle_custom'
+    Align = Center
+    Padding.Top = -1.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    object TLayout
+      Align = Left
+      Position.Y = -1.000000000000000000
+      Size.Width = 22.000000000000000000
+      Size.Height = 51.000000000000000000
+      Size.PlatformDefault = False
+      object TRectangle
+        Align = Center
+        HitTest = False
+        Size.Width = 16.000000000000000000
+        Size.Height = 16.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+        object TColorAnimation
+          StyleName = 'focused'
+          Duration = 0.000000000000000000
+          PropertyName = 'Fill.Color'
+          StartValue = claLightgray
+          StopValue = xFFFF6467
+          Trigger = 'IsChecked=true'
+          TriggerInverse = 'IsChecked=false'
+        end
+      end
+      object TImage
+        StyleName = 'check'
+        MultiResBitmap = <
+          item
+            Width = 12
+            Height = 12
+            PNG = {
+              89504E470D0A1A0A0000000D494844520000000C0000000C080600000056755C
+              E70000000473424954080808087C0864880000003F4944415428916360189AE0
+              FFFFFFFCFFFFFFEF2745F194FFFFFF0B90AFF8FFFFFF3DE882784D46921424DA
+              19488A1490351372B3C0FFFFFF2710E5419A010007345782F18C94D400000000
+              49454E44AE426082}
+            FileName = 
+              'C:\Users\Oceangrave\Desktop\github\Auth\resources\image\check.pn' +
+              'g'
+          end>
+        Align = Center
+        HitTest = False
+        MarginWrapMode = Fit
+        Opacity = 0.000000000000000000
+        Size.Width = 12.000000000000000000
+        Size.Height = 12.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Center
+        object TFloatAnimation
+          Duration = 0.000000000000000000
+          PropertyName = 'Opacity'
+          StartValue = 0.000000000000000000
+          StopValue = 1.000000000000000000
+          Trigger = 'IsChecked=True'
+          TriggerInverse = 'IsChecked=False'
+        end
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = Client
+      Locked = True
+      HitTest = False
+      Margins.Left = 5.000000000000000000
+      Size.Width = 23.000000000000000000
+      Size.Height = 51.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Text'
+      TextSettings.Font.Family = 'SF Pro Text'
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF202020
+    end
+  end
+  object TButtonStyleTextObject
+    StyleName = 'text'
+    Align = Client
+    Locked = True
+    Margins.Left = 3.000000000000000000
+    Size.Width = 778.000000000000000000
+    Size.Height = 666.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Text'
+    Visible = False
+    ShadowVisible = False
+    HotColor = claBlack
+    FocusedColor = claBlack
+    NormalColor = claBlack
+    PressedColor = claBlack
+  end
+end

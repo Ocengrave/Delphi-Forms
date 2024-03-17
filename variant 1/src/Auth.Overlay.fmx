@@ -1,0 +1,14 @@
+object Overlay: TOverlay
+  Size.Width = 793.000000000000000000
+  Size.Height = 474.000000000000000000
+  Size.PlatformDefault = False
+  object RectangleOverlay: TRectangle
+    Align = Client
+    Fill.Color = xFF232323
+    Opacity = 0.000000000000000000
+    Size.Width = 793.000000000000000000
+    Size.Height = 474.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+end
