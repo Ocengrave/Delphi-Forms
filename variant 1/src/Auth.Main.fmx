@@ -738,7 +738,6 @@ object Main: TMain
               Size.PlatformDefault = False
               StyleLookup = 'socButton'
               TabOrder = 0
-              Text = 'login_button'
               TextSettings.Trimming = None
               OnMouseEnter = ChangeIconState
               OnMouseLeave = ChangeIconState
