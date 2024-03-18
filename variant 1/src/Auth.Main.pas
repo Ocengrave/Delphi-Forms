@@ -98,12 +98,14 @@ type
     procedure MovePanelAnimFinishFromReg(Sender: TObject);
     function LookUpEmptyFields: boolean;
     procedure SetTheme(const Value: TTheme);
+    procedure LoadSettings;
   public
     { Public declarations }
     property Theme: TTheme read FTheme write SetTheme;
     property ScreenMode: TScreenMode read FScreenMode write SetScreenMode;
     property SlideIndex: Integer read FSlideIndex write FSlideIndex;
     constructor Create(AOwner: TComponent); override;
+    destructor Destroy; override;
   end;
 
 var
@@ -112,7 +114,7 @@ var
 implementation
 
 uses
-  Auth.Constants, Auth.CodeInputFrame;
+  Auth.Constants, Auth.CodeInputFrame, System.TypInfo;
 
 {$R *.fmx}
 { TAuth }
@@ -225,15 +227,27 @@ end;
 constructor TMain.Create(AOwner: TComponent);
 begin
   inherited;
+  LoadSettings;
+end;
+
+destructor TMain.Destroy;
+begin
+  Settings.Theme := FTheme;
+  Settings.SaveSetting;
+  inherited;
+end;
+
+procedure TMain.LoadSettings;
+begin
+  FTheme := Settings.Theme;
+  ShowMessage(Settings.FileName);
   FScreenMode := TScreenMode.Maximal;
-  // Change the style here, at moment have styles: 'Default' and 'Purple'
-  FTheme := TTheme.Purple;
   FSlideIndex := 1;
   LabelSlide.Text := SLIDE_TEXT_FIRST;
   TimerSlider.Enabled := True;
   UpdateTheme;
-
 end;
+
 
 procedure TMain.edit_email_createClick(Sender: TObject);
 begin
@@ -282,6 +296,7 @@ begin
   else if (ClientWidth >= 650) then
     ScreenMode := TScreenMode.Maximal;
 end;
+
 
 function TMain.LookUpEmptyFields: boolean;
 var
