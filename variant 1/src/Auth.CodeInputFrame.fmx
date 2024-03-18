@@ -5,7 +5,7 @@ object Code: TCode
   OnResize = FrameResize
   object RectangleBG: TRectangle
     Align = Contents
-    Fill.Color = xBF9798A6
+    Fill.Color = xBF4B4B50
     Locked = True
     Size.Width = 488.000000000000000000
     Size.Height = 411.000000000000000000
@@ -14,8 +14,8 @@ object Code: TCode
   end
   object LayoutClient: TLayout
     Align = Center
-    Padding.Left = 20.000000000000000000
-    Padding.Right = 20.000000000000000000
+    Padding.Left = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
     Padding.Bottom = 20.000000000000000000
     Size.Width = 320.000000000000000000
     Size.Height = 290.000000000000000000
@@ -41,13 +41,14 @@ object Code: TCode
     end
     object VertScrollBoxContent: TVertScrollBox
       Align = Client
-      Padding.Right = 10.000000000000000000
+      Padding.Left = 15.000000000000000000
+      Padding.Right = 15.000000000000000000
       Padding.Bottom = 10.000000000000000000
-      Size.Width = 280.000000000000000000
+      Size.Width = 310.000000000000000000
       Size.Height = 236.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
-      Viewport.Width = 280.000000000000000000
+      Viewport.Width = 310.000000000000000000
       Viewport.Height = 236.000000000000000000
       object Label1: TLabel
         Align = Top
@@ -55,14 +56,15 @@ object Code: TCode
         StyledSettings = []
         Margins.Top = 10.000000000000000000
         Margins.Bottom = 10.000000000000000000
+        Position.X = 15.000000000000000000
         Position.Y = 10.000000000000000000
-        Size.Width = 270.000000000000000000
+        Size.Width = 280.000000000000000000
         Size.Height = 24.000000000000000000
         Size.PlatformDefault = False
         TextSettings.Font.Family = 'SF Pro Text'
         TextSettings.Font.Size = 20.000000000000000000
         TextSettings.Font.StyleExt = {00070000000000000004000000}
-        TextSettings.FontColor = xFFE9E9E9
+        TextSettings.FontColor = claWhite
         TextSettings.HorzAlign = Center
         TextSettings.WordWrap = False
         TextSettings.Trimming = None
@@ -75,13 +77,14 @@ object Code: TCode
         StyledSettings = [Style]
         Margins.Top = 10.000000000000000000
         Margins.Bottom = 5.000000000000000000
+        Position.X = 15.000000000000000000
         Position.Y = 54.000000000000000000
-        Size.Width = 270.000000000000000000
+        Size.Width = 280.000000000000000000
         Size.Height = 51.000000000000000000
         Size.PlatformDefault = False
         TextSettings.Font.Family = 'SF Pro Text'
         TextSettings.Font.Size = 14.000000000000000000
-        TextSettings.FontColor = xB4FFFFFF
+        TextSettings.FontColor = claWhite
         TextSettings.HorzAlign = Center
         TextSettings.Trimming = None
         Text = 
@@ -96,9 +99,9 @@ object Code: TCode
         Margins.Top = 15.000000000000000000
         Margins.Right = 5.000000000000000000
         Margins.Bottom = 5.000000000000000000
-        Position.X = 5.000000000000000000
+        Position.X = 20.000000000000000000
         Position.Y = 125.000000000000000000
-        Size.Width = 260.000000000000000000
+        Size.Width = 270.000000000000000000
         Size.Height = 38.000000000000000000
         Size.PlatformDefault = False
         Stroke.Color = claNull
@@ -113,7 +116,7 @@ object Code: TCode
           Margins.Top = 2.000000000000000000
           Margins.Right = 2.000000000000000000
           Margins.Bottom = 2.000000000000000000
-          Size.Width = 215.000000000000000000
+          Size.Width = 225.000000000000000000
           Size.Height = 34.000000000000000000
           Size.PlatformDefault = False
           TextPrompt = 'CODE'
@@ -166,7 +169,7 @@ object Code: TCode
           Margins.Top = 5.000000000000000000
           Margins.Right = 5.000000000000000000
           Margins.Bottom = 5.000000000000000000
-          Position.X = 224.000000000000000000
+          Position.X = 234.000000000000000000
           Position.Y = 5.000000000000000000
           Size.Width = 31.000000000000000000
           Size.Height = 28.000000000000000000
@@ -181,9 +184,9 @@ object Code: TCode
         Margins.Top = 15.000000000000000000
         Margins.Right = 5.000000000000000000
         Margins.Bottom = 8.000000000000000000
-        Position.X = 5.000000000000000000
+        Position.X = 20.000000000000000000
         Position.Y = 183.000000000000000000
-        Size.Width = 260.000000000000000000
+        Size.Width = 270.000000000000000000
         Size.Height = 39.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = 'login_button'
@@ -204,9 +207,9 @@ object Code: TCode
       Align = Top
       Margins.Top = 5.000000000000000000
       Margins.Bottom = 5.000000000000000000
-      Position.X = 20.000000000000000000
+      Position.X = 5.000000000000000000
       Position.Y = 5.000000000000000000
-      Size.Width = 280.000000000000000000
+      Size.Width = 310.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 3
@@ -214,7 +217,7 @@ object Code: TCode
         Align = Right
         Images = ImageList
         ImageIndex = 0
-        Position.X = 248.000000000000000000
+        Position.X = 278.000000000000000000
         Size.Width = 32.000000000000000000
         Size.Height = 24.000000000000000000
         Size.PlatformDefault = False

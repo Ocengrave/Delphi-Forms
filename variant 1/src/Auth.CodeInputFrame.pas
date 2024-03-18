@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls, Auth.Classes,
   FMX.Controls.Presentation, FMX.Layouts, FMX.Objects, FMX.Edit, System.Math,
-  System.ImageList, FMX.ImgList, FMX.Effects;
+  System.ImageList, FMX.ImgList, FMX.Effects, FMX.Ani;
 
 type
   TCode = class(TFrame)
@@ -90,9 +90,11 @@ class procedure TCode.Execute(AParent: TControl; ProcSet: TProc<TCode>;
   ProcExecuted: TProc<TCode, Boolean>);
 begin
   var Frame := TCode.Create(AParent);
+  Frame.Opacity := 0;
   Frame.Parent := AParent;
   Frame.FProcCallback := ProcExecuted;
   Frame.Align := TAlignLayout.Contents;
+  TAnimator.AnimateFloat(Frame, 'Opacity', 1, 0.25, TAnimationType.InOut, TInterpolationType.Cubic);
   Frame.BringToFront;
   if Assigned(ProcSet) then
     ProcSet(Frame);
