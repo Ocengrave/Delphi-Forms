@@ -612,8 +612,6 @@ object Main: TMain
         Viewport.Height = 420.000000000000000000
         object LayoutHeader: TLayout
           Align = Top
-          Margins.Top = 25.000000000000000000
-          Position.Y = 25.000000000000000000
           Size.Width = 325.000000000000000000
           Size.Height = 38.000000000000000000
           Size.PlatformDefault = False
@@ -636,7 +634,7 @@ object Main: TMain
         object LayoutHint: TLayout
           Align = Top
           Margins.Top = 5.000000000000000000
-          Position.Y = 123.000000000000000000
+          Position.Y = 98.000000000000000000
           Size.Width = 325.000000000000000000
           Size.Height = 35.000000000000000000
           Size.PlatformDefault = False
@@ -659,7 +657,7 @@ object Main: TMain
         object LayoutIcons: TLayout
           Align = Top
           Margins.Top = 5.000000000000000000
-          Position.Y = 68.000000000000000000
+          Position.Y = 43.000000000000000000
           Size.Width = 325.000000000000000000
           Size.Height = 50.000000000000000000
           Size.PlatformDefault = False
@@ -747,7 +745,7 @@ object Main: TMain
         object LayoutLogin: TLayout
           Align = Top
           Margins.Top = 2.000000000000000000
-          Position.Y = 261.000000000000000000
+          Position.Y = 271.000000000000000000
           Size.Width = 325.000000000000000000
           Size.Height = 45.000000000000000000
           Size.PlatformDefault = False
@@ -780,7 +778,7 @@ object Main: TMain
         object Layout2: TLayout
           Align = Top
           Margins.Top = 2.000000000000000000
-          Position.Y = 207.000000000000000000
+          Position.Y = 182.000000000000000000
           Size.Width = 325.000000000000000000
           Size.Height = 45.000000000000000000
           Size.PlatformDefault = False
@@ -813,6 +811,7 @@ object Main: TMain
               Size.Height = 31.000000000000000000
               Size.PlatformDefault = False
               TextPrompt = 'Password'
+              OnClick = edit_passwordClick
               OnMouseEnter = edit_passwordMouseEnter
               OnMouseLeave = edit_passwordMouseLeave
             end
@@ -888,7 +887,7 @@ object Main: TMain
         object Layout3: TLayout
           Align = Top
           Margins.Top = 2.000000000000000000
-          Position.Y = 160.000000000000000000
+          Position.Y = 135.000000000000000000
           Size.Width = 325.000000000000000000
           Size.Height = 45.000000000000000000
           Size.PlatformDefault = False
@@ -918,6 +917,7 @@ object Main: TMain
               Size.Height = 31.000000000000000000
               Size.PlatformDefault = False
               TextPrompt = 'Email'
+              OnClick = edit_loginClick
               OnMouseEnter = edit_loginMouseEnter
               OnMouseLeave = edit_loginMouseLeave
             end
@@ -979,7 +979,7 @@ object Main: TMain
         object LayoutErr: TLayout
           Align = Top
           Margins.Top = 2.000000000000000000
-          Position.Y = 257.000000000000000000
+          Position.Y = 267.000000000000000000
           Size.Width = 325.000000000000000000
           Size.Height = 2.000000000000000000
           Size.PlatformDefault = False
@@ -1001,25 +1001,27 @@ object Main: TMain
         object LayoutForgot: TLayout
           Align = Top
           Margins.Top = 3.000000000000000000
-          Position.Y = 255.000000000000000000
+          Position.Y = 230.000000000000000000
           Size.Width = 325.000000000000000000
-          Size.Height = 0.000000000000000000
+          Size.Height = 35.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 2
-          object Button1: TButton
+          object ButtonResetPassword: TButton
             Align = Right
             StyledSettings = [Family]
             Hint = 'Reset password'
             Margins.Right = 25.000000000000000000
+            Margins.Bottom = 15.000000000000000000
             Position.X = 208.000000000000000000
             Size.Width = 92.000000000000000000
-            Size.Height = 0.000000000000000000
+            Size.Height = 20.000000000000000000
             Size.PlatformDefault = False
             StyleLookup = 'hyperLink'
             TabOrder = 2
             Text = 'Forgot password?'
             TextSettings.Font.Family = 'SF Pro Text'
             TextSettings.Font.Size = 10.000000000000000000
+            TextSettings.Font.StyleExt = {04040000000000000004000000}
             TextSettings.FontColor = xFF328CED
             TextSettings.FontColorForState.Normal = xFF328CED
             TextSettings.FontColorForState.Hot = xFF7377F0
@@ -1031,11 +1033,23 @@ object Main: TMain
             OnMouseEnter = ChangeIconState
             OnMouseLeave = ChangeIconState
           end
+          object chb_remember: TCheckBox
+            Align = Client
+            Margins.Left = 20.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Size.Width = 168.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'checkboxstyle_custom'
+            TabOrder = 0
+            Text = 'Remember me'
+            TextSettings.Font.Family = 'SF Pro Text'
+          end
         end
         object Layout4: TLayout
           Align = Top
           Margins.Top = 3.000000000000000000
-          Position.Y = 309.000000000000000000
+          Position.Y = 319.000000000000000000
           Size.Width = 325.000000000000000000
           Size.Height = 35.000000000000000000
           Size.PlatformDefault = False

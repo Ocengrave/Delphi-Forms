@@ -43,7 +43,7 @@ type
     LabelSlide: TLabel;
     TimerSlider: TTimer;
     LayoutForgot: TLayout;
-    Button1: TButton;
+    ButtonResetPassword: TButton;
     Layout4: TLayout;
     ButtonCreate: TButton;
     VertScrollBoxCreate: TVertScrollBox;
@@ -71,6 +71,7 @@ type
     img_lock: TImage;
     gradient_purple: TBrushObject;
     ShadowEffect1: TShadowEffect;
+    chb_remember: TCheckBox;
     procedure FormResize(Sender: TObject);
     procedure ChangeIconState(Sender: TObject);
     procedure Button_loginClick(Sender: TObject);
@@ -85,6 +86,8 @@ type
     procedure edit_passwordMouseLeave(Sender: TObject);
     procedure edit_loginMouseLeave(Sender: TObject);
     procedure edit_loginMouseEnter(Sender: TObject);
+    procedure edit_passwordClick(Sender: TObject);
+    procedure edit_loginClick(Sender: TObject);
   private
     { Private declarations }
     FScreenMode: TScreenMode;
@@ -157,6 +160,13 @@ begin
   img_mail.Parent := Rectangle_email_create;
   img_lock.Parent := Rectangle_create_password;
 
+
+  // Reset "Sign In"
+  ResetErrLabel;
+  RectanglePassword.Stroke.Kind := TBrushKind.None;
+  RectangleLogin.Stroke.Kind := TBrushKind.None;
+  chb_remember.IsChecked := False;
+
 end;
 
 procedure TMain.ButtonGoBackClick(Sender: TObject);
@@ -202,7 +212,6 @@ begin
   begin
     TAnimator.AnimateFloat(LabelErr, 'Opacity', 1, 0.3, TAnimationType.InOut, TInterpolationType.Quadratic);
     TAnimator.AnimateFloat(LayoutErr, 'Height', 35, 0.25, TAnimationType.InOut, TInterpolationType.Quadratic);
-    TAnimator.AnimateFloat(LayoutForgot, 'Height', 15, 0.2, TAnimationType.InOut, TInterpolationType.Quadratic);
     LayoutForgot.Visible := True;
     Exit;                   
   end;
@@ -253,9 +262,15 @@ begin
   Rectangle_email_create.Stroke.Kind := TBrushKind.None;
 end;
 
+procedure TMain.edit_loginClick(Sender: TObject);
+begin
+  ResetErrLabel;
+end;
+
 procedure TMain.edit_loginMouseEnter(Sender: TObject);
 begin
   RectangleLogin.Stroke.Kind := TBrushKind.Solid;
+  ResetErrLabel;
   case FTheme of
     Default: RectangleLogin.Stroke.Color := $FFF85930;
     Purple: RectangleLogin.Stroke.Color := $FF647DEE;
@@ -265,6 +280,11 @@ end;
 procedure TMain.edit_loginMouseLeave(Sender: TObject);
 begin
   RectangleLogin.Stroke.Kind := TBrushKind.None;
+end;
+
+procedure TMain.edit_passwordClick(Sender: TObject);
+begin
+  ResetErrLabel;
 end;
 
 procedure TMain.edit_passwordMouseEnter(Sender: TObject);
@@ -356,9 +376,8 @@ procedure TMain.ResetErrLabel;
 begin
   if LabelErr.Opacity = 1 then
   begin
-    TAnimator.AnimateFloat(LabelErr, 'Opacity', 0, 0.3, TAnimationType.InOut, TInterpolationType.Quadratic); 
+    TAnimator.AnimateFloat(LabelErr, 'Opacity', 0, 0.3, TAnimationType.InOut, TInterpolationType.Quadratic);
     TAnimator.AnimateFloat(LayoutErr, 'Height', 0, 0.2, TAnimationType.InOut, TInterpolationType.Quadratic);
-    TAnimator.AnimateFloat(LayoutForgot, 'Height', 0, 0.2, TAnimationType.InOut, TInterpolationType.Quadratic);
   end;
 end;
 
@@ -443,6 +462,8 @@ begin
           LabelErr.Margins.Left := 25;
           LabelErr.Margins.Right := 25;
           TimerSlider.Enabled := True;
+          chb_remember.Margins.Right := 20;
+          chb_remember.Margins.Left := 20;
         end;
       TScreenMode.Medium:
         begin  
@@ -466,6 +487,8 @@ begin
           TimerSlider.Enabled := False;
           VerticalScrollbox.Height := 420;
           VerticalScrollbox.Width := 310 ;
+          chb_remember.Margins.Right := 8;
+          chb_remember.Margins.Left := 8;
         end;
     end;
 end;
