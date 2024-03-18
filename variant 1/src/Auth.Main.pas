@@ -240,7 +240,6 @@ end;
 procedure TMain.LoadSettings;
 begin
   FTheme := Settings.Theme;
-  ShowMessage(Settings.FileName);
   FScreenMode := TScreenMode.Maximal;
   FSlideIndex := 1;
   LabelSlide.Text := SLIDE_TEXT_FIRST;
