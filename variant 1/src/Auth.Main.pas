@@ -72,6 +72,8 @@ type
     gradient_purple: TBrushObject;
     ShadowEffect1: TShadowEffect;
     chb_remember: TCheckBox;
+    LayoutCircle: TLayout;
+    CircleCenter: TCircle;
     procedure FormResize(Sender: TObject);
     procedure ChangeIconState(Sender: TObject);
     procedure Button_loginClick(Sender: TObject);
@@ -464,10 +466,12 @@ begin
           TimerSlider.Enabled := True;
           chb_remember.Margins.Right := 20;
           chb_remember.Margins.Left := 23;
+          LayoutCircle.Visible := True;
         end;
       TScreenMode.Medium:
         begin  
           LeftPanel.Visible := False;
+          LayoutCircle.Visible := False;
         end;
       TScreenMode.Minimal:
         begin
@@ -489,6 +493,7 @@ begin
           VerticalScrollbox.Width := 310 ;
           chb_remember.Margins.Right := 8;
           chb_remember.Margins.Left := 8;
+          LayoutCircle.Visible := False;
         end;
     end;
 end;
@@ -500,16 +505,17 @@ begin
       begin
         self.StyleBook := WhiteStyle;
         LeftPanel.Fill.Resource.StyleResource := left_gradient;
-        LeftPanel.Fill.Kind := TBrushKind.Resource;
-
+        CircleCenter.Fill.Resource.StyleResource := left_gradient;
       end;
     Purple:
       begin
         self.StyleBook := PurpleStyle;
-        LeftPanel.Fill.Kind := TBrushKind.Resource;
         LeftPanel.Fill.Resource.StyleResource := gradient_purple;
+        CircleCenter.Fill.Resource.StyleResource := gradient_purple;
       end;
   end;
+  LeftPanel.Fill.Kind := TBrushKind.Resource;
+  CircleCenter.Fill.Kind := TBrushKind.Resource;
   self.ApplyStyleLookup;
 end;
 
