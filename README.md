@@ -1,21 +1,27 @@
 # Delphi Forms
-## A set of forms made using Firemonkey in Rad Studio 12
-It is currently under development.
+
+
+![delphi_forms](https://github.com/Ocengrave/Delphi-Forms/assets/42070001/e09ace2a-84dc-42f4-ba4e-49c9f5a4f868)
+<p align="center">
+ The design of the authorization form developed using Firemonkey
+</p>
 
 ## Features
 - Adaptive design
 - Three styles: small, medium and large
 - Smooth animated transitions
-- 2 style for variant 1: White/Purple
+- 2 color styles: White/Purple
 - Form of authorization, registration, and SMS code entry
 - All styles are made on FMX
 
-## In process
-- add overlays for authorization forms
-- expand the color palettes
-- add more different types of shapes
-- expand the functionality of the current forms
+## Planned features
+- Expand the color palettes
+- Add more different types of shapes
+- Expand the functionality of the current forms
+- Ability to customize the color scheme
 
+## Dependencies
+❗ Developed in Rad Studio 12
 
  
 ## License
