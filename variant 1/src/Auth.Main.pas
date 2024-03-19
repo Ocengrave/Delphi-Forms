@@ -169,6 +169,8 @@ begin
   RectangleLogin.Stroke.Kind := TBrushKind.None;
   chb_remember.IsChecked := False;
 
+  LayoutCircle.Visible := False;
+
 end;
 
 procedure TMain.ButtonGoBackClick(Sender: TObject);
@@ -179,7 +181,11 @@ begin
   VertScrollBoxCreate.HitTest := False;
 
   case FScreenMode of
-    Maximal: LeftPanel.Visible := True;
+    Maximal:
+    begin
+      LeftPanel.Visible := True;
+      LayoutCircle.Visible := True;
+    end;
     Medium: LeftPanel.Visible := false;
     Minimal: LeftPanel.Visible := false;
   end;
@@ -198,6 +204,8 @@ begin
   chb_1.IsChecked := False;
   chb_2.IsChecked := False;
   chb_3.IsChecked := False;
+
+
 end;
 
 procedure TMain.ButtonThemeClick(Sender: TObject);
@@ -244,6 +252,8 @@ end;
 destructor TMain.Destroy;
 begin
   Settings.Theme := FTheme;
+  Settings.Width := Width;
+  Settings.Height := Height;
   Settings.SaveSetting;
   inherited;
 end;
@@ -251,6 +261,8 @@ end;
 procedure TMain.LoadSettings;
 begin
   FTheme := Settings.Theme;
+  Width := Settings.Width;
+  Height := Settings.Height;
   FScreenMode := TScreenMode.Maximal;
   FSlideIndex := 1;
   LabelSlide.Text := SLIDE_TEXT_FIRST;

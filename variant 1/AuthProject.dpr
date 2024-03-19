@@ -6,7 +6,8 @@ uses
   Auth.Main in 'src\Auth.Main.pas' {Main},
   Auth.Classes in 'src\classes\Auth.Classes.pas',
   Auth.Constants in 'Auth.Constants.pas',
-  Auth.CodeInputFrame in 'src\Auth.CodeInputFrame.pas' {Code: TFrame};
+  Auth.CodeInputFrame in 'src\Auth.CodeInputFrame.pas' {Code: TFrame},
+  Auth.MainFrame in 'src\Auth.MainFrame.pas' {FrameMain: TFrame};
 
 {$R *.res}
 

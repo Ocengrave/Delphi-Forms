@@ -6,10 +6,10 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls, Auth.Classes,
   FMX.Controls.Presentation, FMX.Layouts, FMX.Objects, FMX.Edit, System.Math,
-  System.ImageList, FMX.ImgList, FMX.Effects, FMX.Ani;
+  System.ImageList, FMX.ImgList, FMX.Effects, FMX.Ani, Auth.MainFrame;
 
 type
-  TCode = class(TFrame)
+  TCode = class(TFrameMain)
     LayoutClient: TLayout;
     RectangleFrame: TRectangle;
     VertScrollBoxContent: TVertScrollBox;
@@ -35,7 +35,8 @@ type
     FProcCallback: TProc<TCode, Boolean>;
     FScreenMode: TScreenMode;
     FLayoutClientWidth, FLayoutClientHeight: Single;
-    procedure SetScreenMode(const Value: TScreenMode);
+  protected
+    procedure SetScreenMode(const Value: TScreenMode); override;
   public
     property ScreenMode: TScreenMode read FScreenMode write SetScreenMode;
     constructor Create(AOwner: TComponent); override;
