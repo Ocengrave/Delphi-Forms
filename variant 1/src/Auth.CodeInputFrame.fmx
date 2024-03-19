@@ -1,14 +1,14 @@
-object Code: TCode
-  Size.Width = 488.000000000000000000
-  Size.Height = 411.000000000000000000
-  Size.PlatformDefault = False
+inherited Code: TCode
+  Size.Width = 458.000000000000000000
+  Size.Height = 518.000000000000000000
   OnResize = FrameResize
+  OnResized = FrameResize
   object RectangleBG: TRectangle
     Align = Contents
     Fill.Color = xBF4B4B50
     Locked = True
-    Size.Width = 488.000000000000000000
-    Size.Height = 411.000000000000000000
+    Size.Width = 458.000000000000000000
+    Size.Height = 518.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
   end
