@@ -5,6 +5,7 @@ object Main: TMain
   ClientHeight = 480
   ClientWidth = 666
   Fill.Kind = Solid
+  Position = ScreenCenter
   StyleBook = WhiteStyle
   Constraints.MinHeight = 480.000000000000000000
   Constraints.MinWidth = 320.000000000000000000
