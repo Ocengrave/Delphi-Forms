@@ -24,12 +24,15 @@ type
     Button_Cross: TButton;
     ImageList: TImageList;
     ShadowEffect1: TShadowEffect;
+    ShadowEffect: TShadowEffect;
     procedure FrameResize(Sender: TObject);
     procedure edit_codeTyping(Sender: TObject);
     procedure Button_CrossClick(Sender: TObject);
     procedure Button_CrossMouseEnter(Sender: TObject);
     procedure Button_CrossMouseLeave(Sender: TObject);
     procedure Button_confirmClick(Sender: TObject);
+    procedure edit_codeMouseLeave(Sender: TObject);
+    procedure edit_codeMouseEnter(Sender: TObject);
   private
     { Private declarations }
     FProcCallback: TProc<TCode, Boolean>;
@@ -78,6 +81,19 @@ begin
   Name := '';
   FLayoutClientWidth := LayoutClient.Width;
   FLayoutClientHeight := LayoutClient.Height;
+end;
+
+procedure TCode.edit_codeMouseEnter(Sender: TObject);
+begin
+  ShadowEffect.Enabled := True;
+  RectangleConfirm.Stroke.Kind := TBrushKind.Solid;
+  RectangleConfirm.Stroke.Color := $FFC6A3A8;
+end;
+
+procedure TCode.edit_codeMouseLeave(Sender: TObject);
+begin
+  ShadowEffect.Enabled := False;
+  RectangleConfirm.Stroke.Kind := TBrushKind.None;
 end;
 
 procedure TCode.edit_codeTyping(Sender: TObject);

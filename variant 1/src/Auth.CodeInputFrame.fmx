@@ -105,7 +105,6 @@ inherited Code: TCode
         Size.Height = 38.000000000000000000
         Size.PlatformDefault = False
         Stroke.Color = claNull
-        Stroke.Thickness = 0.750000000000000000
         object edit_code: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           Align = Client
@@ -122,6 +121,8 @@ inherited Code: TCode
           TextPrompt = 'CODE'
           CharCase = ecUpperCase
           OnTyping = edit_codeTyping
+          OnMouseEnter = edit_codeMouseEnter
+          OnMouseLeave = edit_codeMouseLeave
         end
         object img_mail: TImage
           MultiResBitmap.Height = 48
@@ -174,6 +175,14 @@ inherited Code: TCode
           Size.Width = 31.000000000000000000
           Size.Height = 28.000000000000000000
           Size.PlatformDefault = False
+        end
+        object ShadowEffect: TShadowEffect
+          Distance = 1.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.600000023841857900
+          Opacity = 0.349999994039535500
+          ShadowColor = xFFC6A3A8
+          Enabled = False
         end
       end
       object Button_confirm: TButton
