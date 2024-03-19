@@ -1036,9 +1036,9 @@ object Main: TMain
           end
           object chb_remember: TCheckBox
             Align = Client
-            Margins.Left = 20.000000000000000000
+            Margins.Left = 23.000000000000000000
             Margins.Right = 20.000000000000000000
-            Size.Width = 168.000000000000000000
+            Size.Width = 165.000000000000000000
             Size.Height = 35.000000000000000000
             Size.PlatformDefault = False
             StyleLookup = 'checkboxstyle_custom'

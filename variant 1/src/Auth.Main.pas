@@ -463,7 +463,7 @@ begin
           LabelErr.Margins.Right := 25;
           TimerSlider.Enabled := True;
           chb_remember.Margins.Right := 20;
-          chb_remember.Margins.Left := 20;
+          chb_remember.Margins.Left := 23;
         end;
       TScreenMode.Medium:
         begin  
